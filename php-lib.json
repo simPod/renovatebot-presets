@@ -4,5 +4,12 @@
     ],
     "assignees": ["simpod"],
     "automerge": true,
+    "packageRules": [
+        {
+            "matchPackagePatterns": ["phpstan"],
+            "groupName": "phpstan packages",
+            "groupSlug": "phpstan"
+        }
+    ],
     "rangeStrategy": "replace"
 }
