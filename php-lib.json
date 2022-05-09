@@ -3,8 +3,11 @@
         "config:base"
     ],
     "assignees": ["simpod"],
-    "automerge": true,
     "packageRules": [
+        {
+            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+            "automerge": true
+        },
         {
             "matchPackagePatterns": ["phpstan"],
             "groupName": "phpstan packages",
