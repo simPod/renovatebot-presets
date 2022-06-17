@@ -9,5 +9,6 @@
             "automerge": true
         }
     ],
+    "postUpdateOptions": ["yarnDedupeHighest"],
     "rangeStrategy": "replace"
 }
