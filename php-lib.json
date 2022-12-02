@@ -12,6 +12,11 @@
             "matchPackagePatterns": ["phpstan"],
             "groupName": "phpstan packages",
             "groupSlug": "phpstan"
+        },
+        {
+            "matchPackagePatterns": ["psalm"],
+            "groupName": "psalm packages",
+            "groupSlug": "psalm"
         }
     ],
     "rangeStrategy": "replace"
