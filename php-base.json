@@ -1,0 +1,41 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "matchManagers": ["composer"],
+            "addLabels": ["php"]
+        },
+        {
+            "matchDepNames": ["brick/**"],
+            "groupName": "brick packages",
+            "groupSlug": "brick"
+        },
+        {
+            "matchDepNames": ["league/flysystem**"],
+            "groupName": "league flysystem packages",
+            "groupSlug": "league flysystem"
+        },
+        {
+            "matchDepNames": ["league/uri**"],
+            "groupName": "league uri packages",
+            "groupSlug": "league uri"
+        },
+        {
+            "matchDepNames": ["/^php$/"],
+            "patch": {
+                "enabled": false
+            }
+        },
+        {
+            "matchDepNames": ["/phpstan/"],
+            "groupName": "phpstan packages",
+            "groupSlug": "phpstan"
+        },
+        {
+            "matchDepNames": ["/dave-liddament\/(phpstan-)?php-language-extensions/"],
+            "groupName": "dave-liddament/php-language-extensions virtual packages",
+            "groupSlug": "dave-liddament/php-language-extensions"
+        }
+
+    ]
+}

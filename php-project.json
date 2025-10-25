@@ -4,5 +4,8 @@
         "local>simPod/renovatebot-presets:base",
         "local>simPod/renovatebot-presets:php-base"
     ],
-    "rangeStrategy": "replace"
+    "postUpdateOptions": [
+      "composerWithAll"
+    ],
+    "rangeStrategy": "bump"
 }
