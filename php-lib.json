@@ -4,5 +4,6 @@
         "local>simPod/renovatebot-presets:base",
         "local>simPod/renovatebot-presets:php-base"
     ],
+    "automerge": true,
     "rangeStrategy": "replace"
 }
