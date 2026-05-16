@@ -1,8 +1,8 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "config:base",
-        ":semanticCommitTypeAll(chore)"
+        "local>simPod/renovatebot-presets:base",
+        "local>simPod/renovatebot-presets:js-base"
     ],
     "assignees": ["simpod"],
     "packageRules": [
@@ -10,7 +10,8 @@
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true
         }
+
     ],
-    "postUpdateOptions": ["yarnDedupeHighest"],
+    "postUpdateOptions": ["pnpmDedupe", "yarnDedupeHighest"],
     "rangeStrategy": "replace"
 }

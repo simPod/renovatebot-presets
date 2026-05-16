@@ -6,6 +6,10 @@
             "addLabels": ["php"]
         },
         {
+            "matchDatasources": ["packagist"],
+            "minimumReleaseAge": "3 days"
+        },
+        {
             "matchDepNames": ["brick/**"],
             "groupName": "brick packages",
             "groupSlug": "brick"

@@ -1,0 +1,86 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "matchManagers": ["npm"],
+            "addLabels": ["js"]
+        },
+        {
+            "matchDatasources": ["npm"],
+            "minimumReleaseAge": "3 days"
+        },
+        {
+            "matchDepNames": ["baseui"],
+            "groupName": "baseui packages",
+            "groupSlug": "baseui"
+        },
+        {
+            "matchDepNames": ["@floating-ui/"],
+            "groupName": "floating-ui packages",
+            "groupSlug": "floating-ui"
+        },
+        {
+            "matchDepNames": ["@heroui/**"],
+            "groupName": "heroui packages",
+            "groupSlug": "heroui"
+        },
+        {
+            "matchDepNames": ["@sentry/**"],
+            "groupName": "sentry packages",
+            "groupSlug": "sentry"
+        },
+        {
+            "matchDepNames": ["@types/d3-**"],
+            "groupName": "d3 types packages",
+            "groupSlug": "d3-types"
+        },
+        {
+            "matchDepNames": ["/^jest/"],
+            "groupName": "jest packages",
+            "groupSlug": "jest"
+        },
+        {
+            "matchDepNames": ["/stylelint/"],
+            "groupName": "stylelint packages",
+            "groupSlug": "stylelint"
+        },
+        {
+            "matchDepNames": ["/^node$/"],
+            "patch": {
+                "enabled": false
+            },
+            "minor": {
+                "enabled": false
+            }
+        },
+        {
+            "matchDepNames": ["/^@types\/node$/"],
+            "patch": {
+                "enabled": false
+            }
+        },
+        {
+            "matchDepNames": ["/@tanstack\/(.+-virtual|virtual-.+)/"],
+            "groupName": "@tanstack virtual packages",
+            "groupSlug": "@tanstack-virtual"
+        },
+        {
+            "matchDepNames": ["/@tanstack\/.*table.*/"],
+            "groupName": "@tanstack table packages",
+            "groupSlug": "@tanstack"
+        },
+        {
+            "groupName": "Font Awesome",
+            "matchDepNames": [
+                "@fortawesome/**"
+            ]
+        },
+        {
+            "groupName": "Motion",
+            "matchDepNames": [
+                "framer-motion",
+                "motion"
+            ]
+        }
+    ]
+}
