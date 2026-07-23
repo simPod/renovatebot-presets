@@ -10,7 +10,7 @@
             "minimumReleaseAge": "3 days"
         },
         {
-            "matchDepNames": ["brick/**"],
+            "matchDepNames": ["brick/**", "simPod/phpstan-brick-**"],
             "groupName": "brick packages",
             "groupSlug": "brick"
         },
@@ -25,13 +25,12 @@
             "groupSlug": "league uri"
         },
         {
-            "matchDepNames": ["/^php$/"],
-            "patch": {
-                "enabled": false
-            }
+            "matchManagers": ["composer"],
+            "matchDepNames": ["php"],
+            "enabled": false
         },
         {
-            "matchDepNames": ["/phpstan/"],
+            "matchDepNames": ["phpstan/**"],
             "groupName": "phpstan packages",
             "groupSlug": "phpstan"
         },
